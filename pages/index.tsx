@@ -65,7 +65,7 @@ export default function Home({timeData}:{timeData:itemframes[]}) {
                       console.log(tipe)
                       return  <GridItem borderRadius={10} rowSpan={1} colSpan={1} 
                                         bg={"brand."+tipe.split('-').join('')} position="relative"
-                                        h={{base:'220px'}} key={tipe} >
+                                        h={{base:'220px',sm:'auto'}} key={tipe} >
                       <Flex alignItems='flex-end' position="absolute" justifyContent="flex-end" right={0}>
                         <Image src={`/images/icon-${tipe}.svg`} width="50px" />
                       </Flex>
